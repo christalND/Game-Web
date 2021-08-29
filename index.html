@@ -7,8 +7,18 @@
   <body>
 <h1>jeux vidéo</h1>
 <img src="imgMario.jpg">
-<p>
-c'est un jeu vidéo que j'aime beaucoup et puis tu peux rajouter bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+<p id="toto">
+c'est un jeu vidéo que j'aime beaucoup et puis tu peux rajouter 
 </p>
+<script>
+  
+  const motDetoto = prompt("Afficher quoi ?")
+  const asia = prompt("Combien de " + motDetoto + " veux-tu ? ;-)")
+  for (let i = 0; i < asia; i++) {
+    document.getElementById("toto").insertAdjacentHTML("beforeend", motDetoto);
+  }
+
+
+</script>
 </body>
 </html>
